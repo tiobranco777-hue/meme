@@ -1,0 +1,12 @@
+<!DOCTYPE html><html lang='pt-br'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Heloisa ❤️</title><style>
+body{margin:0;display:flex;justify-content:center;align-items:center;height:100vh;background:linear-gradient(180deg,#ff7eb3,#ffd6e7);overflow:hidden;font-family:Arial}
+.card{background:#fff;padding:24px;border-radius:20px;max-width:340px;text-align:center;box-shadow:0 10px 30px rgba(0,0,0,.2)}
+button{padding:12px 18px;border:none;border-radius:25px;margin:8px;font-size:18px}
+#yes{background:#ff4f8b;color:#fff}#no{background:#ddd}
+.heart{position:fixed;top:-20px;animation:fall 6s linear forwards}
+@keyframes fall{to{transform:translateY(110vh)}}
+</style></head><body><div class='card'><h1>Heloisa ❤️</h1><p>Desde que você entrou na minha vida, meus dias ficaram mais felizes. Cada conversa e cada sorriso seu são especiais para mim.</p><h2>Você aceita namorar comigo? 💍</h2><button id='yes'>Sim ❤️</button><button id='no'>Não</button><p id='m'></p></div><script>
+setInterval(()=>{let h=document.createElement('div');h.className='heart';h.textContent='❤️';h.style.left=Math.random()*100+'vw';document.body.appendChild(h);setTimeout(()=>h.remove(),6000)},250);
+no.onclick=()=>no.style.display='none';
+yes.onclick=()=>{m.innerHTML='🎉 Eu prometo fazer o meu melhor para te fazer feliz! ❤️';for(let i=0;i<60;i++){setTimeout(()=>{let h=document.createElement('div');h.className='heart';h.textContent='💖';h.style.left=Math.random()*100+'vw';document.body.appendChild(h);setTimeout(()=>h.remove(),6000)},i*40)}}
+</script></body></html>
